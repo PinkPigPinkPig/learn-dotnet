@@ -42,22 +42,36 @@ class Program
         try
         {
             HttpResponseMessage httpResponseMessage = await httpClient.GetAsync(url);
-            var bytes = await httpResponseMessage.Content.ReadAsByteArrayAsync();
-            return bytes;
+            using var stream = await httpResponseMessage.Content.ReadAsStreamAsync();
+
+            using var streamWrite = File.OpenWrite(fileName);
+
+            int SIZEBUFFER = 500;
+            var buffer = new byte[SIZEBUFFER];
+            bool endRead = false;
+            do {
+                int numBytes = await stream.ReadAsync(buffer, 0, SIZEBUFFER);
+                if(numBytes == 0)
+                {
+                    endRead = true;
+                }
+                else 
+                {
+                    await streamWrite.WriteAsync(buffer, 0, numBytes);
+                }
+            } while(!endRead);
         }
         catch (Exception e)
         {
             Console.WriteLine(e.Message);
-            return null;
         }
 
     }
     static async Task Main(string[] args)
     {
         var url = "https://img1.freepng.fr/20180204/pyq/kisspng-cristiano-ronaldo-portugal-national-football-team-cristiano-ronaldo-png-picture-5a77078653a020.7826161715177501503425.jpg";
-        var bytes = await DownloadImage(url);
-        string fileName = "cr7.jpg";
-        using var stream = new FileStream(fileName, FileMode.Create, FileAccess.Write, FileShare.None);
-        stream.Write(bytes, 0, bytes.Length);
+        string fileName = "2.jpg";
+        await DownloadStream(url, fileName);
+        
     }
 }
