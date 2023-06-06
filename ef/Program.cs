@@ -69,8 +69,8 @@ class Program
 
         // var dbContext = new ProductDbContext();
         // DropDataBase();
-        // CreateDataBase();
+        CreateDataBase();
         // InsertProduct();
-        ReadProducts();
+        // ReadProducts();
     }
 }
