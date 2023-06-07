@@ -3942,11 +3942,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/apple/Documents/Data/ASP/ef/ef.csproj",
+      "projectUniqueName": "/Users/apple/Documents/Data/ASP/ef-model/ef.csproj",
       "projectName": "ef",
-      "projectPath": "/Users/apple/Documents/Data/ASP/ef/ef.csproj",
+      "projectPath": "/Users/apple/Documents/Data/ASP/ef-model/ef.csproj",
       "packagesPath": "/Users/apple/.nuget/packages/",
-      "outputPath": "/Users/apple/Documents/Data/ASP/ef/obj/",
+      "outputPath": "/Users/apple/Documents/Data/ASP/ef-model/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/apple/.nuget/NuGet/NuGet.Config"
