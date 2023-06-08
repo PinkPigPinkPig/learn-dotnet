@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "MBWfdTX40P4kpt6nrAfdMh3m5g/GH9ktuVgeUtaI4nw52H69uD3haqw82L2cvx/ZVAs2Lc/uUL79fgBkYAk4ZA==",
+  "dgSpecHash": "DrK6u9sMhv7lKH0EIx2XWAfjPPuBoVaUov8K3BPncwW9coHnTM6l2WT1vcTMBB69C2ZBpF81ILKJO2ldmkVpmg==",
   "success": true,
-  "projectFilePath": "/Users/apple/Documents/Data/ASP/ef-model/ef.csproj",
+  "projectFilePath": "/Users/apple/Documents/Data/ASP/ef-fluent-api/ef.csproj",
   "expectedPackageFiles": [
     "/Users/apple/.nuget/packages/azure.core/1.24.0/azure.core.1.24.0.nupkg.sha512",
     "/Users/apple/.nuget/packages/azure.identity/1.6.0/azure.identity.1.6.0.nupkg.sha512",

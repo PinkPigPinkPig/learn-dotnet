@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/apple/Documents/Data/ASP/ef-model/ef.csproj": {}
+    "/Users/apple/Documents/Data/ASP/ef-fluent-api/ef.csproj": {}
   },
   "projects": {
-    "/Users/apple/Documents/Data/ASP/ef-model/ef.csproj": {
+    "/Users/apple/Documents/Data/ASP/ef-fluent-api/ef.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/apple/Documents/Data/ASP/ef-model/ef.csproj",
+        "projectUniqueName": "/Users/apple/Documents/Data/ASP/ef-fluent-api/ef.csproj",
         "projectName": "ef",
-        "projectPath": "/Users/apple/Documents/Data/ASP/ef-model/ef.csproj",
+        "projectPath": "/Users/apple/Documents/Data/ASP/ef-fluent-api/ef.csproj",
         "packagesPath": "/Users/apple/.nuget/packages/",
-        "outputPath": "/Users/apple/Documents/Data/ASP/ef-model/obj/",
+        "outputPath": "/Users/apple/Documents/Data/ASP/ef-fluent-api/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/apple/.nuget/NuGet/NuGet.Config"
