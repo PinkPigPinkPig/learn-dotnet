@@ -24,6 +24,7 @@ namespace ef.Models
             base.OnConfiguring(optionsBuilder);
             optionsBuilder.UseLoggerFactory(loggerFactory);
             optionsBuilder.UseSqlServer(connectionString);
+            optionsBuilder.UseLazyLoadingProxies();
         }
     }
 }

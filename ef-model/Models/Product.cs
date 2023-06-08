@@ -17,12 +17,16 @@ namespace ef.Models
         [Column("Giasanpham",TypeName = "money")]
         public decimal Price { get; set; }
 
-        public int? CateId { get; set; }
+        public int CateId { get; set; }
 
         [ForeignKey("CateId")]
-        [Required]
-        public Category Category { get; set; } // Foreign Key
+        public virtual Category Category { get; set; } // Foreign Key
 
-        public void PrintInfo() => Console.WriteLine($"{ProductId} - {Name} - {Price}");
+        // public int? CateI2 { get; set; }
+        // [ForeignKey("CateId2")]
+        // [InverseProperty("Products")]
+        // public virtual Category Category2 { get; set; } // Foreign Key
+
+        public void PrintInfo() => Console.WriteLine($"{ProductId} - {Name} - {Price} - {CateId}");
     }
 }
