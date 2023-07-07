@@ -11,16 +11,41 @@ namespace hello_asp
 {
     public class Program
     {
+        /*
+            Host (IHost) object:
+                - Dependency Injection(DI): IServiceProvider (ServiceCollection)
+                - Logging (ILogging)
+                - Configuration
+                - IHostedService => StartAsync : Run HTTP Server (Kestrel Http)
+
+            1) Create IHostBuilder
+            2) Config, Register service (call ConfigureWebHostDefaults)
+            3) IHostBuilder.Build() => Host (IHost)
+            4) Host.Run()
+        */
         public static void Main(string[] args)
         {
-            CreateHostBuilder(args).Build().Run();
-        }
+            Console.WriteLine("Start Up!");
+            IHostBuilder builder = Host.CreateDefaultBuilder(args);
+            // Config default for Host
+            builder.ConfigureWebHostDefaults((IWebHostBuilder webBuilder) => {
+                // options config
+                webBuilder.UseStartup<MyStartup>();
+            });
 
-        public static IHostBuilder CreateHostBuilder(string[] args) =>
-            Host.CreateDefaultBuilder(args)
-                .ConfigureWebHostDefaults(webBuilder =>
-                {
-                    webBuilder.UseStartup<Startup>();
-                });
+            IHost host = builder.Build();
+            host.Run();
+        }
+        // public static void Main(string[] args)
+        // {
+        //     CreateHostBuilder(args).Build().Run();
+        // }
+
+        // public static IHostBuilder CreateHostBuilder(string[] args) =>
+        //     Host.CreateDefaultBuilder(args)
+        //         .ConfigureWebHostDefaults(webBuilder =>
+        //         {
+        //             webBuilder.UseStartup<Startup>();
+        //         });
     }
 }
