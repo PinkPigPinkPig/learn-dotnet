@@ -25,3 +25,5 @@
 /Users/apple/Documents/Data/ASP/hello-asp/obj/Debug/net5.0/hello-asp.pdb
 /Users/apple/Documents/Data/ASP/hello-asp/obj/Debug/net5.0/hello-asp.genruntimeconfig.cache
 /Users/apple/Documents/Data/ASP/hello-asp/obj/Debug/net5.0/ref/hello-asp.dll
+/Users/apple/Documents/Data/ASP/hello-asp/bin/Debug/net5.0/bundleconfig.json
+/Users/apple/Documents/Data/ASP/hello-asp/bin/Debug/net5.0/package.json

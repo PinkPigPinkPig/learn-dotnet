@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "9fCqhj7DKEBm1ApwAbPkSQzaoFJAU+HCf0hWKxTnfH5LwBPxO+lHitH5ECNtSbiB7Z2aoXYTRYjA1qgxo0R6Fw==",
+  "dgSpecHash": "C6EkavaoVl8IL1+Pvt5jBGSs1kQ/1zY1M4cn37mSKgOxqj2CcW9WLwGVJlCXqSVzkXe4pluPO4FkMh2pviGT3w==",
   "success": true,
   "projectFilePath": "/Users/apple/Documents/Data/ASP/hello-asp/hello-asp.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "/Users/apple/.nuget/packages/buildbundlerminifier/3.2.449/buildbundlerminifier.3.2.449.nupkg.sha512"
+  ],
   "logs": []
 }
