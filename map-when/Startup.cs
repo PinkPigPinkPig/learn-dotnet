@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -40,8 +41,13 @@ namespace map_when
                 {
                     var configuration = context.RequestServices.GetService<IConfiguration>();
 
-                    var testOpt = configuration.GetSection("TestOptions");
-                    await context.Response.WriteAsync("Hello World!");
+                    var testOptions = configuration.GetSection("TestOptions");
+
+                    var stringBuilder = new StringBuilder();
+
+                    stringBuilder.Append("TESTOPTIONS\n");
+
+                    await context.Response.WriteAsync(stringBuilder.ToString());
                 });
             });
         }
